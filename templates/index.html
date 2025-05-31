@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+        .answer-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .answer-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h3>Ожидание не нажимайте на кнопки пока вопрос не появится! И да прибудет с вами удача</h3>
+    <h4>Выберите ответ:</h4>
+    <button class="answer-btn" id="one"></button>
+    <button class="answer-btn" id="two"></button>
+    <button class="answer-btn" id="three"></button>
+</body>
+</html>
